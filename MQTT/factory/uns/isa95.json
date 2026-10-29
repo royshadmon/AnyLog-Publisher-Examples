@@ -1,0 +1,203 @@
+[
+  {
+    "object": {
+      "description": "object for enterprise",
+      "dbms": "mydb",
+      "table": "sensor_readings",
+      "where": "site = 'factory_a'",
+      "name": "enterprise"
+    }
+  },
+  {
+    "uns": {
+      "name": "enterprise",
+      "namespace": "enterprise",
+      "object_id": "enterprise",
+      "isa95": {
+        "level": "L4",
+        "entity": "Enterprise",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "factory_a",
+      "namespace": "enterprise/factory_a",
+      "object_id": "company_factory_a",
+      "isa95": {
+        "level": "L3",
+        "entity": "Site",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "line_1",
+      "namespace": "enterprise/factory_a/line_1",
+      "object_id": "company_factory_a_line_1",
+      "isa95": {
+        "level": "L2",
+        "entity": "Area",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "line_2",
+      "namespace": "enterprise/factory_a/line_2",
+      "object_id": "company_factory_a_line_2",
+      "isa95": {
+        "level": "L2",
+        "entity": "Area",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "motor_7",
+      "namespace": "enterprise/factory_a/line_1/motor_7",
+      "object_id": "company_factory_a_line_1_motor_7",
+      "isa95": {
+        "level": "L1",
+        "entity": "Work Center",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "temperature",
+      "namespace": "enterprise/factory_a/line_1/motor_7/temperature",
+      "object_id": "object for MQTT company/factory_a/line_1/motor_7/temperature",
+      "isa95": {
+        "level": "L1",
+        "entity": "Work Unit",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "motor_8",
+      "namespace": "enterprise/factory_a/line_1/motor_8",
+      "object_id": "company_factory_a_line_1_motor_8",
+      "isa95": {
+        "level": "L1",
+        "entity": "Work Center",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "temperature",
+      "namespace": "enterprise/factory_a/line_1/motor_8/temperature",
+      "object_id": "object for MQTT company/factory_a/line_1/motor_8/temperature",
+      "isa95": {
+        "level": "L1",
+        "entity": "Work Unit",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "motor_9",
+      "namespace": "enterprise/factory_a/line_1/motor_9",
+      "object_id": "company_factory_a_line_1_motor_9",
+      "isa95": {
+        "level": "L1",
+        "entity": "Work Center",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "temperature",
+      "namespace": "enterprise/factory_a/line_1/motor_9/temperature",
+      "object_id": "object for MQTT company/factory_a/line_1/motor_9/temperature",
+      "isa95": {
+        "level": "L1",
+        "entity": "Work Unit",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "motor_10",
+      "namespace": "enterprise/factory_a/line_2/motor_10",
+      "object_id": "company_factory_a_line_2_motor_10",
+      "isa95": {
+        "level": "L1",
+        "entity": "Work Center",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "temperature",
+      "namespace": "enterprise/factory_a/line_2/motor_10/temperature",
+      "object_id": "object for MQTT company/factory_a/line_2/motor_10/temperature",
+      "isa95": {
+        "level": "L1",
+        "entity": "Work Unit",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "motor_11",
+      "namespace": "enterprise/factory_a/line_2/motor_11",
+      "object_id": "company_factory_a_line_2_motor_11",
+      "isa95": {
+        "level": "L1",
+        "entity": "Work Center",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "temperature",
+      "namespace": "enterprise/factory_a/line_2/motor_11/temperature",
+      "object_id": "object for MQTT company/factory_a/line_2/motor_11/temperature",
+      "isa95": {
+        "level": "L1",
+        "entity": "Work Unit",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "motor_12",
+      "namespace": "enterprise/factory_a/line_2/motor_12",
+      "object_id": "company_factory_a_line_2_motor_12",
+      "isa95": {
+        "level": "L1",
+        "entity": "Work Center",
+        "standard": "ISA-95"
+      }
+    }
+  },
+  {
+    "uns": {
+      "name": "temperature",
+      "namespace": "enterprise/factory_a/line_2/motor_12/temperature",
+      "object_id": "object for MQTT company/factory_a/line_2/motor_12/temperature",
+      "isa95": {
+        "level": "L1",
+        "entity": "Work Unit",
+        "standard": "ISA-95"
+      }
+    }
+  }
+]

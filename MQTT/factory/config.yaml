@@ -1,0 +1,36 @@
+# One publisher. Each broker receives one line.
+# 32150 is the standalone node's broker. 32160 is the operator node's broker.
+brokers:
+  - host: 127.0.0.1
+    port: 32150
+    line: line_1
+  - host: 127.0.0.1
+    port: 32160
+    line: line_2
+
+publish:
+  # Topics are {company}/{site}/{line}/{machine}/temperature
+  company: company
+  site: factory_a
+  # Readings per second for each motor.
+  hertz: 1
+  # 0 delivers at most once. 1 delivers at least once. 2 delivers exactly once.
+  qos: 0
+  # true stores the latest message so a subscriber that connects later receives it immediately.
+  retain: false
+
+lines:
+  line_1:
+    # center of random number generator
+    temperature_c: 72.0
+    motors:
+      - motor_7
+      - motor_8
+      - motor_9
+  line_2:
+    # center of random number generator
+    temperature_c: 64.0
+    motors:
+      - motor_10
+      - motor_11
+      - motor_12
