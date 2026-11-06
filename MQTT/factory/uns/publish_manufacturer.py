@@ -28,7 +28,9 @@ def blockchain_get(conn: str, command: str) -> str:
 
 
 def insert_policy(conn: str, policy: dict) -> None:
-    payload = f"<new_policy={json.dumps(policy)}>".encode()
+    # A body wrapped in <...> ends at the first '>'. One line keeps a where
+    # comparison such as wind_speed_mph > 20 inside the assignment.
+    payload = f"new_policy={json.dumps(policy)}\n".encode()
     request = urllib.request.Request(
         conn,
         data=payload,
@@ -84,7 +86,7 @@ def publish(conn: str, policies: list) -> None:
             if not uns["parent"]:
                 raise SystemExit(f"No parent policy for {parent}")
 
-        if blockchain_get(conn, f"blockchain get uns where namespace={namespace} bring [*][id]"):
+        if blockchain_get(conn, f'blockchain get uns where namespace="{namespace}" bring [*][id]'):
             print(f"exists {namespace}")
             continue
 

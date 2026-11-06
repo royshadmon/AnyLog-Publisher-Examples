@@ -2,7 +2,7 @@
 # 32150 is the standalone node's broker. 32160 is the operator node's broker.
 brokers:
   - host: 127.0.0.1
-    port: 32150
+    port: 32050
     line: line_1
   - host: 127.0.0.1
     port: 32160
